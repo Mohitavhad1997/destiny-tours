@@ -242,8 +242,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .quick-icon{
   width:52px; height:52px; border-radius:50%;
   display:flex; align-items:center; justify-content:center;
-  background:linear-gradient(135deg,var(--navy),var(--navy-deep));
-  color:var(--gold);
+  background:linear-gradient(135deg,#FF8C00,#E76F00);
+  color:#FFFFFF;
   box-shadow:var(--shadow-soft);
 }
 .quick-icon svg{ width:22px; height:22px; }
