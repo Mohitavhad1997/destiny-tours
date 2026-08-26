@@ -1,0 +1,63 @@
+/* ==========================================================================
+   Destiny Tours — responsive.css
+   Mobile-first breakpoints
+   ========================================================================== */
+
+@media (max-width: 1080px){
+  .services-grid{ grid-template-columns:repeat(2,1fr); }
+  .dest-grid{ grid-template-columns:repeat(3,1fr); }
+  .footer-grid{ grid-template-columns:1fr 1fr; }
+  .pkg-grid{ grid-template-columns:repeat(2,1fr); }
+  .stats-grid{ grid-template-columns:repeat(2,1fr); }
+  .masonry{ column-count:3; }
+}
+
+@media (max-width: 900px){
+  .nav-links{
+    position:fixed; top:0; right:0; height:100vh; width:78%; max-width:340px;
+    background:var(--navy-deep); flex-direction:column; align-items:flex-start;
+    padding:110px 34px 34px; gap:22px; transform:translateX(100%);
+    transition:transform .4s ease; box-shadow:-20px 0 50px rgba(0,0,0,0.3);
+  }
+  .nav-links.is-open{ transform:translateX(0); }
+  .nav-links a{ font-size:1.05rem; }
+  .nav-cta .btn-outline span, .nav-cta{ display:none; }
+  .menu-toggle{ display:flex; }
+  .about-grid{ grid-template-columns:1fr; }
+  .about-media{ margin-bottom:20px; }
+  .contact-grid{ grid-template-columns:1fr; }
+  .enquiry-grid{ grid-template-columns:1fr; }
+  .value-grid{ grid-template-columns:1fr 1fr; }
+}
+
+@media (max-width: 780px){
+  :root{ --header-h:70px; }
+  .quick-grid{ grid-template-columns:repeat(3,1fr); }
+  .services-grid{ grid-template-columns:1fr 1fr; }
+  .dest-grid{ grid-template-columns:1fr 1fr; }
+  .testi-grid{ grid-template-columns:1fr; }
+  .pkg-grid{ grid-template-columns:1fr; }
+  .footer-grid{ grid-template-columns:1fr 1fr; gap:30px; }
+  .masonry{ column-count:2; }
+  .form-row{ grid-template-columns:1fr; }
+  .section{ padding:64px 0; }
+  .enquiry-wrap{ padding:30px; }
+  .stats-grid{ grid-template-columns:1fr 1fr; }
+  .value-grid{ grid-template-columns:1fr; }
+  .qr-card{ flex-direction:column; text-align:center; }
+}
+
+@media (max-width: 520px){
+  .dest-grid{ grid-template-columns:1fr; }
+  .quick-grid{ grid-template-columns:repeat(3,1fr); gap:10px; padding:16px; }
+  .quick-icon{ width:44px; height:44px; }
+  .quick-item span{ font-size:.72rem; }
+  .footer-grid{ grid-template-columns:1fr; }
+  .masonry{ column-count:1; }
+  .hero-actions{ flex-direction:column; width:100%; }
+  .hero-actions .btn{ width:100%; }
+  .stats-grid{ grid-template-columns:1fr; }
+  .floating-whatsapp{ width:52px; height:52px; bottom:18px; right:18px; }
+  .back-to-top{ width:42px; height:42px; bottom:18px; left:18px; }
+  .contact-card, .enquiry-wrap{ padding:24px; }
+}
